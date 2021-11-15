@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Oak Tree Software - Innovation In Cloud</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <%= stylesheet_link_tag theme_asset_path("css/main.css") %>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat%3A400%2C700&ver=4.2.2">
+    <%= javascript_include_tag theme_asset_path("js/main.js") %>
+</head>
+<body>
+
+<!-- Carousel -->
+<div id="home" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#home" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#home" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="http://versionone.oaktreecloud.com/wp-content/uploads/2021/10/slide3.webp" alt="Los Angeles" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>A Trusted tech partner<br /> for start-ups and start-<br />up accelerators</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="http://versionone.oaktreecloud.com/wp-content/uploads/2021/10/slide2.webp" alt="Chicago" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>A Trusted tech partner<br /> for start-ups and start-<br />up accelerators</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="http://versionone.oaktreecloud.com/wp-content/uploads/2021/10/slide1.webp" alt="New York" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3>A Trusted tech partner<br /> for start-ups and start-<br />up accelerators</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      </div>  
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Carousel ends here-->
+<!-- Header starts here -->
+<div class="header-container">
+  <div class="header-inner-container">
+    <div class="container">
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="javascript:void(0)"><img src="http://versionone.oaktreecloud.com/wp-content/uploads/2021/10/logo-blue-white-transparent.png" alt="Oak Tree Cloud" class="home-logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav mh-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="javascript:void(0)">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0)">Contact Us</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <button class="btn-base btn-primary" type="button">+91 0731-4991873 </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+<!-- Header ends here -->
+
+
+    <div id="wrapper" class="clearfix">
+        <div class="home-wrap clearfix">
+            <% if is_home? %>
+                <%= yield %>
+            <% else %>
+                <div id="ww">
+                    <div class="container"><%= yield %></div>
+                </div>
+            <% end %>
+        </div><!-- END home-wrap -->
+    </div><!-- end of wrapper-->
+
+
+
+
+    <!-- Footer section ends here -->
+<div>
+  <footer>
+    <div class="container">
+      <div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="pb-5">
+              <h4>Other Links</h4>
+            </div>
+            <div>
+              <ul>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Whitepapers</a></li>
+                <li><a href="">Case Studies</a></li>
+                <li><a href="">Mission & Vision</a></li>
+                <li><a href="">Client Testimonial</a></li>
+                <li><a href="">OakTreeSoftware USP</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="pb-5">
+              <h4>Contact</h4>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  Shekhar Central,<br /> 8th, Floor, 802, Palasia Square,<br /> Manorama Ganj, Indore,<br /> Madhya Pradesh 452001  
+                </li>
+                <li><a href="mailto:hr@oaktreecloud.com%20">hr@oaktreecloud.com</a></li>
+                <li><a href="tel:+91%2007314991873">+91 07314991873</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="pb-5">
+              <h4>Oak Tree Software</h4>
+            </div>
+            <div>
+              <ul>
+                <li>
+                  Shekhar Central,<br /> 8th, Floor, 802, Palasia Square,<br /> Manorama Ganj, Indore,<br /> Madhya Pradesh 452001  
+                </li>
+                <li>
+                  Oaktreesoftware is a well-known brand,<br /> popular for offering robust and scalable<br /> Salesforce and web development<br /> solutions. We provide quality web<br /> solutions and salesforce<br /> implementation services to small,<br /> medium as well as large enterprises.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>

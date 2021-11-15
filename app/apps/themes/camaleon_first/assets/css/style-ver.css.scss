@@ -1,0 +1,123 @@
+/*
+Theme Name: StanleyWP
+Theme URI: http://gentsthemes.com
+Description: Responsive WordPress theme with all the Twitter Bootstrap elements and features.
+
+Author: Brad Williams & Carlos Alvarez & Carlos Alvarez
+Author URI: http://gentsthemes.com
+Version: 3.0.3
+Tags: white, black, gray, light, custom-menu, custom-header, custom-background, one-column, two-columns, left-sidebar, right-sidebar, flexible-width, theme-options, threaded-comments, full-width-template, sticky-post, translation-ready, bootstrap, twitter
+
+Copyright (C) 2011-2014 Gents Themes
+License: GNU General Public License, version 3 (GPLv3)
+License URI: license.txt
+
+CREATE CHILD THEME.
+See: http://codex.wordpress.org/Child_Themes
+
+CSS Rules: Sorted alphabetically for better organization.
+*/
+
+
+/* =Admin bar
+-------------------------------------------------------------- */
+/*header css starts here*/
+#home{
+	position: relative;
+}
+.header-inner-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.home-logo{
+	width: 100%;
+}
+.carousel-caption{
+    top: 44% !important;
+    text-align: left !important;
+}
+.mh-auto{
+	margin: 0 auto 0 auto;
+}
+.btn-base{
+	border: none;
+    padding: 8px 18px;
+}
+.btn-base:hover{
+	background: #fff !important;
+	color: #0072e9 !important;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: #fff !important;
+    text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-item.active .nav-link{
+	color: #0072e9 !important;
+}
+/*header css ends here*/
+
+.about-container{
+    padding: 185px 0px 200px 0px;
+}
+.heading-title{
+	color: #FA4612;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.heading-sub-title h2{
+	font-weight: bold;
+}
+.heading-sub-title{
+    padding: 0px 100px 50px 0px;
+}
+.description{
+    font-size: 18px;
+    color: #748494;
+    line-height: 1.5;
+    padding: 0 0 50px 0;
+}
+.about-next-img{
+	margin-top: -18rem;
+    margin-left: 7rem;
+}
+.about-asset-sec{
+	padding: 3rem;
+}
+
+footer{
+    padding: 130px 0px 90px 0px;
+    color: #748494;
+    font-size: 14px;
+    line-height: 1.6rem;
+}
+footer a{
+    color: #748494;
+}
+footer ul{
+	list-style-type: none;
+	padding: 0;
+}
+footer li a{
+	text-decoration: none;
+}
+@media (max-width: 768px){
+	.home-logo{
+		width: 100%;
+	}
+	.navbar-brand{
+		width: 28%;
+	}
+	.carousel-control-next, .carousel-control-prev{
+		height: 20% !important;
+		top: 50% !important;  
+	}
+	.about-asset-sec img{
+		width: 100%;
+	}
+	#mynavbar{
+		background: #000;
+	}
+}
