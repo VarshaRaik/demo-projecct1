@@ -1,0 +1,2 @@
+gem "bootstrap", '>= 5.0.2' 
+gem "camaleon_cms",  '>= 2.4.6.1'

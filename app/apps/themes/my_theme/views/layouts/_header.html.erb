@@ -1,0 +1,116 @@
+<!-- Carousel -->
+  <section class="home-section">
+    <div id="home" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#home" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#home" data-bs-slide-to="2"></button>
+      </div>
+    
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+        <%= image_tag theme_asset_path("images/slide3.webp"), :title=> "Slide3", class:"d-block" %>
+
+
+          <div class="banner-overlay"></div>
+          <div class="carousel-caption">
+            <h3>We go beyond Integration. Automation is the key to future proof your business.</h3>
+            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag theme_asset_path("images/slide2.webp"), :title=> "Slide2", class:"d-block" %>
+
+
+          <div class="banner-overlay"></div>
+          <div class="carousel-caption">
+            <h3>Creating Solutions that deliver Omnichannel experiences.</h3>
+            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> -->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag theme_asset_path("images/slide1.webp"), :title=> "Slide1", class:"d-block" %>
+
+         <div class="banner-overlay"></div>
+          <div class="carousel-caption">
+            <h3>Accelerate your digital capabilities with meaningful integration solutions</h3>
+            <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+  </section>
+
+  <!-- Carousel ends here-->
+
+
+       <!-- Header starts here -->
+  <div class="header-container">
+    <div class="header-inner-container">
+      <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)"><%= image_tag theme_asset_path("images/logo-blue-white-transparent.png"), :title=> "Oak Tree Cloud", class:"home-logo" %>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+              <ul class="navbar-nav mh-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="javascript:void(0)">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">About Us</a>
+                </li>
+                <li class="dropdown nav-item">
+                  <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">Services <b class="caret"></b></a>
+                  <ul class="dropdown-menu multi-level">
+                      <li class="dropdown-submenu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Salesforce</a>
+                          <!-- Level 2 -->
+                          <ul class="dropdown-menu single-level">
+                              <li><a href="#">Sales Cloud</a></li>
+                              <li><a href="#">Marketing Cloud</a></li>
+                              <li><a href="#">Service Cloud</a></li>
+                              <li><a href="#">Salesforce Pardot</a></li>
+                              <li><a href="#">Salesforce CPQ</a></li>
+                              <li><a href="#">Salesforce Integration</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-sub-item"><a href="#">ROR</a></li>
+                      <li class="nav-sub-item"><a href="#">React JS</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Resources</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Contact Us</a>
+                </li>
+              </ul>
+              <div class="d-flex">
+                <button class="btn-base btn-primary" type="button">+91 0731-4991873 </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- Header ends here -->
+
+        
